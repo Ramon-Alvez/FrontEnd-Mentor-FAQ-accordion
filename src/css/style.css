@@ -12,9 +12,9 @@ html {
     top: 0;
     z-index: -1;
     width: 100%;
-}
-.background-pattern img {
-    width: 100%;
+    }
+    .background-pattern img {
+        width: 100%;
 }
 
 body {
@@ -51,55 +51,52 @@ body {
 }
 
 /* FAQ Sections Style */
-#faq-section li {
+#faq-items .faq-item {
     list-style: none;
-}
-
-#faq-section .faq {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--Neutral);
     }
-    #faq-section .faq:last-child {
+    #faq-items .faq-item:last-child {
         padding-bottom: 0;
         border: none;
 }
 
-#faq-section .faq .question {
+#faq-items .faq-item .question {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
     }
-    #faq-section .faq .question h2 {
+    #faq-items .faq-item .question h2 {
         font-size: var(--QuestionFontSize);
         color: var(--Titles);
+        cursor: pointer;
     }
-    #faq-section .faq .question::after,
-    #faq-section .faq .question.active::after {
-        content: '';
-        width: 3rem;
-        height: 3.1rem;
-        display: block;
-        margin-left: 1rem;
-    }
-    #faq-section .faq .question::after {
-        background: url(../assets/images/icon-plus.svg) no-repeat center center;
-    }
-    #faq-section .faq .question.active::after {
-        background: url(../assets/images/icon-minus.svg) no-repeat center center;
-    }
-    #faq-section .faq .question:hover {
+    #faq-items .faq-item .question:hover h2 {
         color: var(--ActiveStates);
         transition: 0.2s ease-in-out;
+        }
+        #faq-items .faq-item .question::after,
+        #faq-items .faq-item.active .question::after {
+            content: '';
+            width: 3rem;
+            height: 3.1rem;
+            display: block;
+            margin-left: 1rem;
+        }
+        #faq-items .faq-item .question::after {
+            background: url(../assets/images/icon-plus.svg) no-repeat center center;
+        }
+        #faq-items .faq-item.active .question::after {
+            background: url(../assets/images/icon-minus.svg) no-repeat center center;
 }
 
-#faq-section .faq .answer {
+#faq-items .faq-item .answer {
     font-size: var(--AnswerFontSize);
     margin-top: 1rem;
     display: none;
     color: var(--TextColor);
     }
-    #faq-section .faq .answer.show {
+    #faq-items .faq-item.active > .answer {
         display: block;
 }
 

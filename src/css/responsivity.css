@@ -11,17 +11,17 @@
     }
 
     /* FAQ Section spacing */
-    #faq-section .faq {
+    #faq-items .faq-item {
         padding: 3rem 0;
     }
 
     /* FAQ Question lenght limiter */
-    #faq-section .faq .question h2 {
+    #faq-items .faq-item .question h2 {
         max-width: 25rem;
     }
 
     /* FAQ Answer adjustment */
-    #faq-section .faq .answer {
+    #faq-items .faq-item .answer {
         font-size: 1.5rem;
         margin-top: 1.5rem;
     }
@@ -29,7 +29,7 @@
 
 /* FAQ Question lenght limiter */
 @media screen and (max-width: 370px) {
-    #faq-section .faq .question h2 {
+    #faq-items .faq-item .question h2 {
         max-width: 20rem;
     }
 }
